@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '../components/Button';
 
@@ -49,6 +48,10 @@ const CheckoutPage: React.FC<CheckoutPageProps> = ({ onSuccess, onCancel }) => {
                 <div className="space-y-1">
                   <label className="text-xs uppercase tracking-widest text-zinc-500">Full Name</label>
                   <input type="text" placeholder="John Doe" className="w-full bg-black border border-zinc-800 rounded-xl p-4 focus:border-green-500 outline-none transition-all" />
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs uppercase tracking-widest text-zinc-500">Mobile Number</label>
+                  <input type="tel" placeholder="+91 98765 43210" className="w-full bg-black border border-zinc-800 rounded-xl p-4 focus:border-green-500 outline-none transition-all" />
                 </div>
                 <div className="space-y-1">
                   <label className="text-xs uppercase tracking-widest text-zinc-500">Email Address</label>
